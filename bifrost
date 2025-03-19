@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+echo "Copying files..."
+cp ../infinifractal/infinifractal.js infinifractal.js
+cp ../infinifractal/infinifractal.wasm infinifractal.wasm
+cp ../infinifractal/index.html index.html
+
+echo "Commiting to Git..."
+git add .
+git commit -m "Bifrost Deploy"
+
+echo "Pushing to Github..."
+git push
+
+echo "Done!"
